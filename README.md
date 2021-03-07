@@ -1,40 +1,27 @@
-# cucumber-clojure
+# IntelliJ Cucumber Plugin for Clojure
 
 ![Build](https://github.com/taraktikos/cucumber-clojure/workflows/Build/badge.svg)
 [![Version](https://img.shields.io/jetbrains/plugin/v/16196-cucumber-clojure.svg)](https://plugins.jetbrains.com/plugin/16196-cucumber-clojure)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/16196-cucumber-clojure.svg)](https://plugins.jetbrains.com/plugin/16196-cucumber-clojure)
 
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [x] Verify the [pluginGroup](/gradle.properties), [plugin ID](/src/main/resources/META-INF/plugin.xml) and [sources package](/src/main/kotlin).
-- [x] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html).
-- [x] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate) for the first time.
-- [x] Set the Plugin ID in the above README badges.
-- [x] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html).
-- [x] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
-
 <!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
 
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
+The [IntelliJ Plugin](https://plugins.jetbrains.com/plugin/16196-cucumber-clojure) adds [cucumber](https://cucumber.io/docs/gherkin/reference/) step highlighting and navigation to step declarations
+for Clojure language with [kaocha-cucumber](https://github.com/lambdaisland/kaocha-cucumber) library
 
-To keep everything working, do not remove `<!-- ... -->` sections. 
+## Features
+
+- Declared step highlighting and autocompletion
+- Go to step declaration
+- Cucumber icons along step declarations
+
+##Dependencies
+- [Cursive plugin](https://plugins.jetbrains.com/plugin/8090-cursive)
+- [Gherkin plugin](https://plugins.jetbrains.com/plugin/9164-gherkin)
+
 <!-- Plugin description end -->
 
-## Installation
+## License
+Copyright &copy; 2021 Taras S.
 
-- Using IDE built-in plugin system:
-  
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "cucumber-clojure"</kbd> >
-  <kbd>Install Plugin</kbd>
-  
-- Manually:
-
-  Download the [latest release](https://github.com/taraktikos/cucumber-clojure/releases/latest) and install it manually using
-  <kbd>Settings/Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
-
-
----
-Plugin based on the [IntelliJ Platform Plugin Template][template].
-
-[template]: https://github.com/JetBrains/intellij-platform-plugin-template
+Available under the terms of the MIT License, see LICENSE

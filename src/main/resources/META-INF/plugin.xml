@@ -1,16 +1,57 @@
 <idea-plugin>
     <id>com.github.taraktikos.cucumberclojure</id>
-    <name>cucumber-clojure</name>
-    <vendor>taraktikos</vendor>
+    <name>Cucumber for Clojure</name>
+    <category>Test Tools</category>
+    <vendor email="tarassuhovenko@gmail.com" url="https://github.com/taraktikos">Taras S.</vendor>
+
+    <description><![CDATA[
+      Adds support for <a href="https://cucumber.io/">Cucumber</a> testing tools with step definitions written in Clojure using <a href="https://github.com/lambdaisland/kaocha-cucumber">kaocha-cucumber</a>.
+
+      Issue tracking at <a href="https://github.com/taraktikos/cucumber-clojure/issues">GitHub</a>.
+    ]]></description>
+
+    <change-notes><![CDATA[
+      <ul>
+        <li>0.1.0: Initial release.</li>
+        <li>2020.3.2.0: Initial release for IntelliJ 2020.3.2
+          <ol>
+            <li>Added navigation to step declaration</li>
+          </ol>
+        </li>
+      </ul>
+    ]]>
+    </change-notes>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
+    <depends>gherkin</depends>
+    <depends>com.cursiveclojure.cursive</depends>
+
+    <extensions defaultExtensionNs="org.jetbrains.plugins.cucumber.steps">
+        <cucumberJvmExtensionPoint implementation="com.github.taraktikos.cucumberclojure.CucumberExtension"/>
+    </extensions>
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.taraktikos.cucumberclojure.services.MyApplicationService"/>
         <projectService serviceImplementation="com.github.taraktikos.cucumberclojure.services.MyProjectService"/>
+
+        <fileBasedIndex implementation="com.github.taraktikos.cucumberclojure.CucumberStepIndex"/>
+
+<!--        <pom.declarationSearcher implementation="com.github.taraktikos.cucumberclojure.search.StepDeclarationSearcher"/>-->
+<!--        <referencesSearch implementation="com.github.taraktikos.cucumberclojure.search.StepDefinitionUsageSearcher"/>-->
+<!--        <findUsagesHandlerFactory implementation="com.github.taraktikos.cucumberclojure.search.StepFindUsagesHandlerFactory"/>-->
+        <codeInsight.lineMarkerProvider implementationClass="com.github.taraktikos.cucumberclojure.search.CucumberLineMarkerProvider" language="Clojure"/>
     </extensions>
+
+
+
+    <actions>
+        <group id="HelloAction" text="Cucumber Clojure" description="About cucumber clojure plugin">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action class="com.github.taraktikos.cucumberclojure.actions.CucumberClojureAction" id="Actions.HelloAction" text="Version"/>
+        </group>
+    </actions>
 
     <applicationListeners>
         <listener class="com.github.taraktikos.cucumberclojure.listeners.MyProjectManagerListener"
