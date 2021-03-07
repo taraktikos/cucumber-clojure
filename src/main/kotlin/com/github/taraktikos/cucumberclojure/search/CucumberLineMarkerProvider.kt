@@ -11,7 +11,7 @@ import icons.CucumberIcons.Cucumber
  * @author Taras S.
  */
 class CucumberLineMarkerProvider : LineMarkerProvider {
-    private val keywords = listOf("Given", "When", "Then", "And", "But") //TODO: fix it
+    private val keywords = listOf("Given", "When", "Then", "And", "But") // TODO: fix it
     override fun getLineMarkerInfo(element: PsiElement): LineMarkerInfo<PsiElement>? {
         return (element as? ClList)?.let {
             if (element.children.size > 3 && keywords.contains(element.children[0].text)) {

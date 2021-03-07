@@ -4,12 +4,6 @@
     <category>Test Tools</category>
     <vendor email="tarassuhovenko@gmail.com" url="https://github.com/taraktikos">Taras S.</vendor>
 
-    <description><![CDATA[
-      Adds support for <a href="https://cucumber.io/">Cucumber</a> testing tools with step definitions written in Clojure using <a href="https://github.com/lambdaisland/kaocha-cucumber">kaocha-cucumber</a>.
-
-      Issue tracking at <a href="https://github.com/taraktikos/cucumber-clojure/issues">GitHub</a>.
-    ]]></description>
-
     <change-notes><![CDATA[
       <ul>
         <li>0.1.0: Initial release.</li>
