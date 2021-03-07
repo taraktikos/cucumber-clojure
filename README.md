@@ -16,6 +16,7 @@ for Clojure language with [kaocha-cucumber](https://github.com/lambdaisland/kaoc
 - Cucumber icons along step declarations
 
 ##Dependencies
+
 - [Cursive plugin](https://plugins.jetbrains.com/plugin/8090-cursive)
 - [Gherkin plugin](https://plugins.jetbrains.com/plugin/9164-gherkin)
 

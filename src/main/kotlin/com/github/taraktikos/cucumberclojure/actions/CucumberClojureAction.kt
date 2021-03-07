@@ -14,7 +14,7 @@ import com.intellij.util.Consumer
 class CucumberClojureAction : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
         val icon = IconLoader.getIcon("/resources/META-INF/pluginIcon.svg", CucumberClojureAction::class.java)
-        Messages.showMessageDialog(e.project, "Cucumber Clojure version 1.0", "Cucumber Clojure", icon)
+        Messages.showMessageDialog(e.project, "Cucumber Clojure plugin version 2020.3.2.0", "Cucumber Clojure", icon)
     }
 
     private fun showFileDialog(e: AnActionEvent) {
