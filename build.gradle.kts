@@ -81,6 +81,10 @@ tasks {
         jvmTarget = "1.8"
     }
 
+    buildSearchableOptions {
+        enabled = false
+    }
+
     patchPluginXml {
         version(properties("pluginVersion"))
         sinceBuild(properties("pluginSinceBuild"))
