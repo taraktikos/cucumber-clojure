@@ -6,7 +6,7 @@
 
 <!-- Plugin description -->
 
-The [IntelliJ Plugin](https://plugins.jetbrains.com/plugin/16196-cucumber-clojure) adds [cucumber](https://cucumber.io/docs/gherkin/reference/) step highlighting and navigation to step declarations
+The [IntelliJ-based Plugin](https://plugins.jetbrains.com/plugin/16196-cucumber-clojure) adds [cucumber](https://cucumber.io/docs/gherkin/reference/) step highlighting and navigation to step declarations
 for Clojure language with [kaocha-cucumber](https://github.com/lambdaisland/kaocha-cucumber) library
 
 ## Features
@@ -15,7 +15,7 @@ for Clojure language with [kaocha-cucumber](https://github.com/lambdaisland/kaoc
 - Go to step declaration
 - Cucumber icons along step declarations
 
-##Dependencies
+## Dependencies
 
 - [Cursive plugin](https://plugins.jetbrains.com/plugin/8090-cursive)
 - [Gherkin plugin](https://plugins.jetbrains.com/plugin/9164-gherkin)
