@@ -6,14 +6,20 @@
 
     <change-notes><![CDATA[
       <ul>
-        <li>2020.3.2.1: Release for IntelliJ 2020.3.2</li>
-          <ol>
+        <li>2020.3.3.0: Release for IntelliJ 2020.3.3
+          <ul>
+           <li>Added navigation to step usages</li>
+          </ul>
+        </li>
+        <li>2020.3.2.1: Release for IntelliJ 2020.3.2
+          <ul>
            <li>Minor fixes</li>
-          </ol>
+          </ul>
+        </li>
         <li>2020.3.2.0: Initial release for IntelliJ 2020.3.2
-          <ol>
+          <ul>
             <li>Added navigation to step declaration</li>
-          </ol>
+          </ul>
         </li>
         <li>0.1.0: Initial release.</li>
       </ul>
@@ -36,9 +42,9 @@
 
         <fileBasedIndex implementation="com.github.taraktikos.cucumberclojure.CucumberStepIndex"/>
 
-<!--        <pom.declarationSearcher implementation="com.github.taraktikos.cucumberclojure.search.StepDeclarationSearcher"/>-->
-<!--        <referencesSearch implementation="com.github.taraktikos.cucumberclojure.search.StepDefinitionUsageSearcher"/>-->
-<!--        <findUsagesHandlerFactory implementation="com.github.taraktikos.cucumberclojure.search.StepFindUsagesHandlerFactory"/>-->
+        <pom.declarationSearcher implementation="com.github.taraktikos.cucumberclojure.search.StepDeclarationSearcher"/>
+        <referencesSearch implementation="com.github.taraktikos.cucumberclojure.search.StepDefinitionUsageSearcher"/>
+        <findUsagesHandlerFactory implementation="com.github.taraktikos.cucumberclojure.search.StepFindUsagesHandlerFactory"/>
         <codeInsight.lineMarkerProvider implementationClass="com.github.taraktikos.cucumberclojure.search.CucumberLineMarkerProvider" language="Clojure"/>
     </extensions>
 
