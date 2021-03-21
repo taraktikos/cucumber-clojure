@@ -3,6 +3,7 @@
 # cucumber-clojure Changelog
 
 ## [Unreleased]
+## [2020.3.3.0]
 ## [2020.3.2.1] Release for IntelliJ 2020.3.2
 - Minor fixes
 ## [2020.3.2.0] Initial release for IntelliJ 2020.3.2
