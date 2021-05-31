@@ -10,16 +10,18 @@ import org.jetbrains.plugins.cucumber.steps.AbstractStepDefinition
 class StepDefinition(val clList: ClList) : AbstractStepDefinition(clList.firstChild) {
     val integerRegexp = "(-?\\d+)"
     val floatRegexp = "([+-]?(\\d+.)?\\d+)"
+    val stringRegexp = "(.*)"
 
     val paramRegexp = mapOf(
         "{int}" to integerRegexp,
         "{bigdecimal}" to floatRegexp,
         "{float}" to floatRegexp,
-        "{double}" to floatRegexp
+        "{double}" to floatRegexp,
+        "{string}" to stringRegexp
     )
 
     override fun getVariableNames(): List<String> {
-        return listOf("a", "b")
+        return listOf()
     }
 
     override fun getCucumberRegexFromElement(element: PsiElement): String {

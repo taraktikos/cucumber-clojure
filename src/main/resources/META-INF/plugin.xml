@@ -6,6 +6,7 @@
 
     <change-notes><![CDATA[
       <ul>
+        <li>2021.1.1.1: Fixed navigation bug with string variable</li>
         <li>2021.1.1.0: Release for IntelliJ 2021.1.1</li>
         <li>2020.3.3.0: Release for IntelliJ 2020.3.3
           <ul>
